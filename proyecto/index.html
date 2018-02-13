@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pagina de Videojuegos</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="../instaladores/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+
+
+
+</head>
+<body>
+
+	<header>
+		<!-- menú de mavenación -->
+		<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-fm">
+							<span class="sr-only">Desplegar / Ocultar Menu</span>
+							<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand">KAPPA</a>
+				</div>
+				<!-- inicio de menú -->
+				<div class="collapse navbar-collapse" id="navegacion-fm">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Inicio</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Categorias <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li class=""><a href="#">Acción</a></li>
+								<li class="divider"></li>
+								<li class=""><a href="#">Aventura</a></li>
+								<li class=""><a href="#">Deportes</a></li>
+							</ul>
+						</li>
+						<li class=""><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</a></li>
+						<li class=""><a href="#"><span class="glyphicon glyphicon-transfer"></span> Cambiar</a></li>
+					</ul>
+					<form action="" class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<input type="text"  class="form-control" placeholder="buscar" name="">
+						</div>
+						<button type="submit" class="btn btn-primary">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="container">
+		<br>
+		<div class="col-md-12">
+			<div id="carousel-1" class="carousel slide" data-ride="carousel">
+				<!-- indicadores -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-1" data-slide-to="1"></li>
+					<li data-target="#carousel-1" data-slide-to="2"></li>
+				</ol>
+				<!-- contenedor -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="imagenes/parallax3.jpg" class="img-responsive">
+						<div class="carousel-caption hidden-xs hidden-sm">
+							<h3>Videojuegos Multiplataforma</h3>
+							<p>compra los ultimos juegos para ti</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="imagenes/parallax1.jpg" class="img-responsive imagen" >
+						<div class="carousel-caption hidden-xs hidden-sm">
+							<h3>Intercambia</h3>
+							<p>cambia tus juegos y aumenta tu colección </p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="imagenes/parallax2.jpg" class="img-responsive">
+						<div class="carousel-caption hidden-xs hidden-sm">
+							<h3>Recompensas</h3>
+							<p>subasta tus logros al mejor postor</p>
+						</div>
+					</div>
+				</div>
+				<!-- controles -->
+				<a href="#carousel-1" class="left carousel-control" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				</a>
+				<a href="#carousel-1" class="right carousel-control" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- ARTICULOS -->
+	<section class="main container">
+		<div class="row">
+			<section class="posts col-md-9">
+				<article class="post clearfix">
+					<a href="#" class="thumb pull-left">
+						<img src="imagenes/consolaPS4.jpg" class="img-thumbnail">
+					</a>
+					<h2 class="post-title"><a href="#">PS4</a></h2>
+					<!-- tabla dinamica -->
+					<div class="container">
+						<br>
+						<div class="row">
+							<div class="col-md-5">
+								<div role="tabpanel">
+									<ul class="nav nav-tabs" role="tablist">
+										<li role="presentation" class=" active"><a href="#seccion1" aria-controls="seccion1" data-toggle="tab" role="tab">Juegos</a></li>
+										<li role="presentation"><a href="#seccion2" aria-controls="seccion2" data-toggle="tab" role="tab">Trofeos</a></li>
+										<li role="presentation"><a href="#seccion3" aria-controls="seccion3" data-toggle="tab" role="tab">Subastas</a></li>
+									</ul>
+									<div class="tab-content">
+										<div role=="tabpanel" class="tab-pane active" id="seccion1" >
+											<h3>Juegos</h3>
+											<p>aquí verás los juegos existentes</p>
+											<a href="#" class="btn btn-primary">Ir a</a>
+											<a href="#" class="btn btn-success">comentarios <span class="badge">20</span></a>
+										</div>
+										<div role=="tabpanel" class="tab-pane" id="seccion2">
+											<h3>Trofeos</h3>
+											<p>aquí verás las mejores recompensas de cada titulo</p>
+											<a href="#" class="btn btn-primary">Ir a</a>
+											<a href="#" class="btn btn-success">comentarios <span class="badge">20</span></a>
+										</div>
+										<div role=="tabpanel" class="tab-pane" id="seccion3">
+											<h3>Subastas</h3>
+											<p>aquí encontrarás las subastas en linea</p>
+											<a href="#" class="btn btn-primary">Ir a</a>
+											<a href="#" class="btn btn-success">comentarios <span class="badge">20</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+				<article class="post clearfix">
+					<a href="#" class="thumb pull-left">
+						<img src="imagenes/consolaXboxOne.jpg" class="img-thumbnail">
+						<h2 class="post-title"><a href="#">Xbox One</a></h2>
+						<!-- tabla dinamica -->
+						<div class="container">
+							<br>
+							<div class="row">
+								<div class="col-md-5">
+									<div role="tabpanel">
+										<ul class="nav nav-tabs" role="tablist">
+											<li role="presentation" class=" active"><a href="#seccion4" aria-controls="seccion4" data-toggle="tab" role="tab">Juegos</a></li>
+											<li role="presentation"><a href="#seccion5" aria-controls="seccion5" data-toggle="tab" role="tab">Trofeos</a></li>
+											<li role="presentation"><a href="#seccion6" aria-controls="seccion6" data-toggle="tab" role="tab">Subastas</a></li>
+										</ul>
+										<div class="tab-content">
+											<div role=="tabpanel" class="tab-pane active" id="seccion4" >
+												<h3>Juegos</h3>
+												<p>aquí verás los juegos existentes</p>
+												<a href="#" class="btn btn-primary">Ir a</a>
+												<a href="#" class="btn btn-success">comentarios <span class="badge">20</span></a>
+											</div>
+											<div role=="tabpanel" class="tab-pane" id="seccion5">
+												<h3>Trofeos</h3>
+												<p>aquí verás las mejores recompensas de cada titulo</p>
+												<a href="#" class="btn btn-primary">Ir a</a>
+												<a href="#" class="btn btn-success">comentarios <span class="badge">20</span></a>
+											</div>
+											<div role=="tabpanel" class="tab-pane" id="seccion6">
+												<h3>Subastas</h3>
+												<p>aquí encontrarás las subastas en linea</p>
+												<a href="#" class="btn btn-primary">Ir a</a>
+												<a href="#" class="btn btn-success">comentarios <span class="badge">20</span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</article>
+				<article class="post clearfix">
+					<a href="#" class="thumb pull-left">
+						<img src="imagenes/consolaPC.png" class="img-thumbnail">
+					</a>
+					<h2 class="post-title"><a href="#">PC</a></h2>
+					<!-- tabla dinamica -->
+					<div class="container">
+						<br>
+						<div class="row">
+							<div class="col-md-5">
+								<div role="tabpanel">
+									<ul class="nav nav-tabs" role="tablist">
+										<li role="presentation" class=" active"><a href="#seccion7" aria-controls="seccion7" data-toggle="tab" role="tab">Juegos</a></li>
+										<li role="presentation"><a href="#seccion8" aria-controls="seccion8" data-toggle="tab" role="tab">Trofeos</a></li>
+										<li role="presentation"><a href="#seccion9" aria-controls="seccion9" data-toggle="tab" role="tab">Subastas</a></li>
+									</ul>
+									<div class="tab-content">
+										<div role=="tabpanel" class="tab-pane active" id="seccion7" >
+											<h3>Juegos</h3>
+											<p>aquí verás los juegos existentes</p>
+											<a href="#" class="btn btn-primary">Ir a</a>
+											<a href="#" class="btn btn-success">comentarios <span class="badge">20</span></a>
+										</div>
+										<div role=="tabpanel" class="tab-pane" id="seccion8">
+											<h3>Trofeos</h3>
+											<p>aquí verás las mejores recompensas de cada titulo</p>
+											<a href="#" class="btn btn-primary">Ir a</a>
+											<a href="#" class="btn btn-success">comentarios <span class="badge">20</span></a>
+										</div>
+										<div role=="tabpanel" class="tab-pane" id="seccion9">
+											<h3>Subastas</h3>
+											<p>aquí encontrarás las subastas en linea</p>
+											<a href="#" class="btn btn-primary">Ir a</a>
+											<a href="#" class="btn btn-success">comentarios <span class="badge">20</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+
+				<nav>
+					<div class="text-center">
+							<a href="#" class=" btn btn-primary btn-responsive ver-mas">Ver mas consolas</a>
+					</div>
+
+			</section>
+			<aside class="col-md-3 hidden-xs hidden-sm">
+				<h4>Categorias</h4>
+				<div class="list-group">
+					<a href="#" class="list-group-item active">Acción</a>
+					<a href="#" class="list-group-item ">Aventura</a>
+					<a href="#" class="list-group-item ">Deportes</a>
+					<a href="#" class="list-group-item ">Otros</a>
+				</div>
+				<h4>Articulos Recientes</h4>
+				<a href="#" class="list-group-item">
+					<h4 class="list-group-item-heading">Evento en vivo</h4>
+					<p class="list-group-item-text">se subastará items de PS4 los proximos días</p>
+				</a>
+				<a href="#" class="list-group-item">
+					<h4 class="list-group-item-heading">Allison Road</h4>
+					<p class="list-group-item-text">Proximamente edicion Beta</p>
+				</a>
+				<a href="#" class="list-group-item">
+					<h4 class="list-group-item-heading">Oferta unica</h4>
+					<p class="list-group-item-text">ofertas en Videojuegos para Xbox One desde la proxima semana</p>
+				</a>
+			</aside>
+		</div>
+	</section>
+	<!-- footer -->
+	<footer class="hidden-xs hidden-sm">
+		<div class="post">
+			<div class="container ">
+				<div class="row ">
+					<div class="col-md-4 informacion text-right">
+						<h4>Si quieres recibir mas información</h4>
+
+
+					</div>
+					<div class="form-group col-md-4 text-left ">
+						<input type="text"  class="form-control correo text-left" placeholder="ingresa tu correo" name="">
+					</div>
+					<div class="form-group col-md-3 ofertas ">
+						<a href="#" class="btn btn-responsive btn-default">Ofertas y Descuentos</a>
+					</div>
+		</div>
+	</footer>
+
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="../instaladores/js/bootstrap.min.js"></script>
+</body>
+</html>
